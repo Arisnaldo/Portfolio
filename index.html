@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arisnaldo | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="container">
+        <nav>
+            <div class="logo">&lt;Arisnaldo /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_home">Início</a></li>
+                <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+            </ul>
+            <button id="lang-toggle" class="lang-toggle">EN</button>
+        </nav>
+
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="glitch-wrapper">
+                    <h1 id="hacker-name" data-value="ARISNALDO">ARISNALDO</h1>
+                    <div class="cursor"></div>
+                </div>
+                <p class="hero-role" data-i18n="hero_role">Estudante de Ciência da Computação</p>
+                <a href="#contact" class="cta-button" data-i18n="contact_btn">Entrar em Contato</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://external-preview.redd.it/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg?width=1080&crop=smart&auto=webp&s=9cd1cf1afbc7722588a5a03bd6606552f06135cf"
+                    alt="Arisnaldo Profile">
+            </div>
+        </section>
+
+        <section id="about" class="reveal">
+            <h2 class="section-title" data-i18n="about_title">Sobre Mim</h2>
+            <div class="about-content">
+                <p class="mono" data-i18n="about_desc">
+                    Loading user profile...
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2 class="section-title">Formação</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017 - 2019</span>
+                        <h3>Técnico em Informática</h3>
+                        <p>Desenvolvimento Web, Software e Hardware, Lógica de Programação, POO e afins.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Presente</span>
+                        <h3>Ciência da Computação</h3>
+                        <p>Bacharelado em andamento. Foco em algoritmos, estrutura de dados e desenvolvimento de
+                            software.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Presente</span>
+                        <h3>Desenvolvedor FullStack (Estudos)</h3>
+                        <p>Aprofundando conhecimentos em React, Node.js e Python através de projetos práticos e cursos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2 class="section-title" data-i18n="projects_title">Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Crypto Monitor Bitcoin - Python</h3>
+                        <p class="project-desc" data-i18n="project_bitcoin_desc">Interface gráfica em Python para
+                            monitoramento do Bitcoin em tempo real com sistema de alertas.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Bitcoin</span>
+                        </div>
+                        <a href="https://github.com/Arisnaldo/monitor-bitcoin-python" target="_blank"
+                            class="project-link">GitHub <i class="devicon-github-original"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Valorant Memory Game</h3>
+                        <p class="project-desc" data-i18n="project_valorant_desc">Jogo da memória temático de Valorant com agentes icônicos, efeitos sonoros e sistema de pontuação.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Valorant</span>
+                        </div>
+                        <a href="https://github.com/Arisnaldo/Jogo-da-memoria" target="_blank" class="project-link">GitHub <i class="devicon-github-original"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Pomodoro Timer</h3>
+                        <p class="project-desc" data-i18n="project_pomodoro_desc">Temporizador Pomodoro com cronômetro, ciclos de foco e descanso, notificações e histórico de sessões.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Arisnaldo/Pomodoro" target="_blank" class="project-link">GitHub <i class="devicon-github-original"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2 class="section-title" data-i18n="skills_title">Habilidades</h2>
+            <div class="skills-carousel">
+                <div class="skills-track">
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-git-plain"></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-vscode-plain"></i>
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-python-plain"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-java-plain"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-c-plain"></i>
+                        <h3>C</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-mysql-plain"></i>
+                        <h3>SQL</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2 class="section-title">Contato</h2>
+            <div class="about-content" style="text-align: center;">
+                <p style="margin-bottom: 2rem;">Estou disponível para novas oportunidades e colaborações.</p>
+                <div class="contact-links" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="mailto:arisnaldo@alu.ufc.br" class="cta-button">
+                        Email <i class="devicon-google-plain"></i>
+                    </a>
+                    <a href="https://github.com/Arisnaldo" target="_blank" class="cta-button">
+                        GitHub <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arisnaldo/" target="_blank" class="cta-button">
+                        LinkedIn <i class="devicon-linkedin-plain"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p data-i18n="footer_text">Desenvolvido por Arisnaldo © 2025</p>
+        </footer>
+
+        <img src="./src/img/car.gif" class="pixel-car" alt="Pixel Car">
+    </div>
+
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
